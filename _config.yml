@@ -1,0 +1,76 @@
+# Site settings
+title: Kazenke's Blog
+SEOTitle: Kazenke 的博客 | Kazenke's Blog
+header-img: img/home-bg.jpg
+email: kurisusun@gmail.com
+description: "Personal notes on technology and everything."
+keyword: ""
+url: "https://AsyncKurisu.github.io"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     KazenkE
+github_username:    AsyncKurisu
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude:
+  - less
+  - node_modules
+  - Gruntfile.js
+  - package.json
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+plugins:
+  - jekyll-paginate
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Google
+google_analytics_id: "G-224SWJWH9C"
+google_site_verification: "nzBjtlRSgCLjJ6Ha0AR_2j2wTwxq7VEKxo4kCb5"
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "荡漾。"
+sidebar-avatar: /img/avatar-kazenke.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "Bangumi",
+        href: "https://bgm.tv/user/778552"
+    }
+]

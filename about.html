@@ -1,0 +1,66 @@
+---
+layout: page
+title: "About"
+description: "「一百多年 不如一面」"
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+        寻找麦格芬。
+    </blockquote>
+    
+    <p>
+        这里是 Kazenke 的个人博客，记录技术相关和一切值得记录的内容。
+    </p>
+
+    <p> 
+        你也可以在 GitHub 找到我： 
+        <a href="https://github.com/AsyncKurisu" target="_blank"> 
+            github.com/AsyncKurisu 
+        </a> 
+    </p>
+
+</div>
+
+<!-- English Version -->
+<div class="en post-container">
+    <blockquote>
+        Searching MacGuffin.
+    </blockquote>
+
+    <p>
+        This is Kazenke's personal blog, where I document technology-related topics and anything else worth recording.
+    </p>
+
+    <p> 
+        You can also find me on GitHub: 
+        <a href="https://github.com/AsyncKurisu" target="_blank"> 
+            github.com/AsyncKurisu 
+        </a> 
+    </p>
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
